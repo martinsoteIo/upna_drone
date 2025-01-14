@@ -122,4 +122,4 @@ docker system prune -a --volumes
 ```
 
 ## Bugs & Feature Requests
-Feedback to improve the project is welcomed. Please report bugs and request features using the [Issue Tracker](https://github.com/danisotelo/px4_ros2_humble/issues).
+Feedback to improve the project is welcomed. Please report bugs and request features using the [Issue Tracker](https://github.com/martinsoteIo/upna_drone/issues).
