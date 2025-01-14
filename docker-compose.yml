@@ -1,0 +1,28 @@
+# *******************************************************************************
+# Script Name  : docker-compose.yml
+# Author       : Martín Sotelo Aguirre
+# Date         : 14/01/2024
+# Version      : v1.0
+# *******************************************************************************
+
+services:
+  ros2-desktop-vnc:
+    build: .
+    container_name: ${CONTAINER_NAME:-upna_drone}
+    ports:
+      - "6080:80"
+    security_opt:
+      - seccomp:unconfined
+    shm_size: 512m
+    volumes:
+      - /home/${HOST_USER:-martin}/${CONTAINER_NAME:-upna_drone}_shared_volume:/home/${CONTAINER_USER:-ubuntu}/shared_volume:rw
+    environment:
+      - USER=${CONTAINER_USER:-ubuntu}
+      - PASSWORD=${CONTAINER_PASSWD:-ubuntu}
+    stdin_open: true
+    tty: true
+    privileged: true
+
+volumes:
+  shared_volume:
+    driver: local
