@@ -1,14 +1,8 @@
-# Docker VNC ROS2 Humble + PX4 + Gazebo Harmonic
-
-![vnc_px4_ros2_dev](https://github.com/user-attachments/assets/ce466767-dc35-4628-8fee-2093d2b98597)
-
-https://github.com/user-attachments/assets/8e8c75f2-6713-42a0-82e4-c754222bef5c
+# UPNA Drone: Docker Integration of ROS2 Humble + Gazebo Sim Harmonic + PX4 + QGroundControl
 
 ## Overview
 
-This Dockerfile provides a HTML5 VNC interface to access Ubuntu Desktop 22.04 with ROS 2 Humble, PX4 and Gazebo Harmonic. It includes additional tools such as Mozilla Firefox Navigator, Terminator and VSCodium for easy development. This project can be used as a template for different environment configurations through easy modifications. This work was greatly inspired by the work done by [Tiryoh](https://github.com/Tiryoh/docker-ros2-desktop-vnc/tree/master).
-
-The implemented project consists of a UR5e robotic arm visually tracking a Holybro x500 drone equipped with an ArUco tag. Since there is no official support for robot control with ROS 2 Humble + Gazebo Harmonic, this project has additionally developed a custom ROS package to make them compatible (see `src/gz_ros2_control`). This project also provides a ROS 2 package with the description files of the UR5e arm equipped with the Robotiq-85 gripper and one Intel RealSense D435 camera attached to the arm through a custom-designed support assembly.
+TODO: write overview
 
 ## Get Started
 
