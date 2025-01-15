@@ -2,7 +2,7 @@
 
 ## Overview
 
-TODO: write overview
+This project provides a step-by-step guide for setting up a UAV simulation environment using Docker. It includes the integration of PX4, ROS2 Humble, Gazebo Simulation Harmonic, and QGroundControl.
 
 ## Get Started
 
@@ -53,7 +53,7 @@ git clone https://github.com/danisotelo/px4_ros2_humble.git
 ```
 
 ### Build Docker Image and Run
-Now, go into the `.env` file and change the `HOST_USER` environment variable to your actual host user. Building the Docker image and running the container from the Dockerfile using Docker-Compose is really simple, you just need to run:
+Now, go into the `.env` and `.yml` files and change the `HOST_USER` environment variable to your actual host user. Building the Docker image and running the container from the Dockerfile using Docker-Compose is really simple, you just need to run:
 ```
 cd ~/px4_ros2_humble
 docker-compose build
@@ -120,6 +120,11 @@ In case you want to delete the images and volumes created by the container to re
 docker-compose down --volumes
 docker system prune -a --volumes
 ```
+
+## Credits
+
+This project is based on the repository [danisotelo/px4_ros2_humble](https://github.com/danisotelo/px4_ros2_humble). Modifications include the addition of QGroundControl to the simulation environment to enhance functionality and usability.
+
 
 ## Bugs & Feature Requests
 Feedback to improve the project is welcomed. Please report bugs and request features using the [Issue Tracker](https://github.com/martinsoteIo/upna_drone/issues).
