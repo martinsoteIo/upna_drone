@@ -8,7 +8,7 @@
 FROM osrf/ros:humble-desktop-full
 
 ARG TARGETPLATFORM
-LABEL maintainer="danisotelo<danisotacam@gmail.com>"
+LABEL maintainer="martinsoteIo<martinsot2004@gmail.com>"
 
 SHELL ["/bin/bash", "-c"]
 
